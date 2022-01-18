@@ -1,34 +1,92 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-
+A. in order to store multiple values in a same object.
 
 What are the various operations that can be performed on different Data Structures?
+A. add, remove, set.
+
 List out the areas in which data structures are applied extensively?
+A. data science,databases,graphic design.
+
 what is an Array?
+A. it is an object that contain multiple values.
+
 what is the difference between the Array and ArrayList?
+A. array is static and it is predefined, arrayList is dynamic and grew based on need.
+
 what is LinkedList?
+A. it is a list that uses nodes to store values.
+
 How is an Array different from Linked List?
+A. array stores values inside blocks, linked list stores values inside nodes.
+
 what is queue?
+A. it is a collection based on the way that the data is stored inside(first in first out).
+
 what is stack?
+A. it is a collection based on the way that the data is stored inside(last in first out).
+
 what is FIFO and LIFO?
+A. first in first out.
+B. last in first out.
+
 what is the order of complexity?
+A. it is a storing the value from the smallest to the biggest.
+
 what is the best case to search an element from an array?
+A. the map
+
 what is the worst case to search an element from an array?
+A.the collection
+
 what is tree in data structure?
+A. it is a non-linear data made of nodes.
+
 what is graph in data structure?
+A. it is a non-linear data made of node.
+
 what is the difference between the HashTable and HashMap?
+A. hashtable is synchronized, and hashmap is not synchronized.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A.
 How HashMap works in java?
+A. key-value pair
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. it is an error, happens when we try to get a value that is not existing in array using index.
+
 What are the different ways of copying an array into another array?
+A. array.copy()
+B. System.arraycopy()
+c. object.clone()
+
 What is difference between an array and a linked list?
+A. array stores values inside blocks and linked list stores inside nodes.
+
 What is DFS and BFS?
+A. breadth first search
+B. depth first search
+
 What is Recursion?
+A. it is when a method calls itself.
+
 What are linear and non linear data Structures?
+A. linear is anything that going when the data is stored(arraylist), non-linear is when the nodes can be linked to any
+other node(tree).
+
 What is Big-(O)-notation?
+A. it is a mathematical notation that describe the limiting behavior of a function when the argument tends towards
+a particular value or infinity.
+
 Outlined different kind of sorting algorithm with time complexity?
+A. insertion sort
+B. selection sort
+c. bubble sort
+D. pucket sort
+E. merge sort
+F. heap sort
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.

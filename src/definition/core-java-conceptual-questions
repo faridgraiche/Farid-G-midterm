@@ -1,85 +1,190 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
-
-
-
+A. it is an intermediate language between the human being and the machine.
 
 What jdk contains or composed of and define each components?
-A.
-
-
-
-
+A. Java development kit,composed of JRE(java run-time),
+   JVM, and docs(documentation of java in the library).
 
 What is IDE?
-A.
-
-
+A. interface development environment.
 
 What are the IDEs available in the market to support java?
-A.
-
-
+A. eclipse, and intellij
 
 Explain the entire java life cycle.
+A. source code becoming a byte-code going through the compiler which will run during the run-time
+   using the run-time compiler.
+
 what is class?
+A. it is a blueprint.
+
 What is object?
+A. it is an instance of a class.
+
 What is the entry point of an application?
+A. the main methode.
+
 Why main is static?
+A. because the class can be called without creating an object.
+
 Which class is the superclass of all classes?
+A. the object class.
+
 What is difference between path and classpath variables?
+A. a path variable is a path that we set for java in general, class path is a path that we set only for class.
+
 What is the difference between an Interface and Abstract class?
+A.interface can not be implemented and the variables are final, and abstract can have instance method that
+  implements a default behavior, and may contain a non-final variables.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. no,, used by creating a different name and use it as object
+   EX: phones iphone = new phones();
+
 what is Access Specifier?
+A. a keywords that are specifying the accessibility of our proprieties.
+
 What is OOP ? Define each feature of java OOP.
+A. OOP stand for Object Oriented Program.
+   a. inheritance: it is about classes, a class can be extended to an other class.
+   b. polymorphism: it is about methods.
+   c: encapsulation: it is a data hiding(protecting the data).
+   d. abstraction: it is an implementation hiding.
+
 What is Java Package and which package is imported by default?
+A. java package is a folder that holds alla different java classes.
+B. the package which imported by default is java.lang
+
 What is API? Name list of API that you have used so far.
+A. (application programming interface), we used java API.
+
 Does java support multiple inheritance, explain why or why not?
+A. no, because it can only extend to one class.
+
 What is method overloading and when it happens?
+A. it is when two methods have the same name but different parametters, happening during the compile time.
+
 Explain exceptions in java and how to handle it.
+A. compile time exception and run time exception.
+B. we can use (try and catch block) or throws keyword.
+
 What is static keyword in java? How it has been used in variables and methods ?
+A. used the same variable or method of a given class.
+
 What is final and how it has been used variables and methods?
+A. when used final variable or method means we can not change the later on .
+
 What is final, finally and finalize?
+A. final is used for methods and variables.
+B. finally is associated with try and catch block
+c. finalized is used with garbage collection.
+
 What is a constructor ?
+A. it is a code similar to a method called when we create an object.
+
 Can we have multiple constructors in a class?
+A. yes
+
 If we don't have a constructor declared, what is called during the object creation?
+A. a default constructor.
+
 What is "this" keyword in java ?
+A. used to link a global variable to local variable.
+
 What is "super" keyword in java? How many possible way can you use?
+A. it is a keyword that can evoque the proprieties of the super class
+B. we can use it for variables and methods.
+
 What is JVM stand for ?
+A. Java virtual machine.
+
 Is JVM platform independent?
+A. yes
+
 What version of java are you using?
+A. java 8.
+
 What is JAR stand for ?
+A. Java ARchive.
+
 What is the difference between JDK and JVM?
+A. JVM is an environment , and JDK is a platform.
+
 What is the difference between JVM and JRE?
+A. JVM is converting bytecode during run-time
+
 What is compile time and run time?
+A. compile time is when we enter code and run-time is when the machine execute the codes.
+
 What is heap?
+A. it is a dynamic memory used in java.
+
 How java manage it's memory?
+A. by calling the garbage collection te clean the non used objects to make space to the new objects.
+
 What is the difference between String, StringBuffer and StringBuilder?
 What is Singleton class?
+A. it is a class and object protection.
+
 What is Serialization and Deserialization?
 when to use transient variable in java?
 Difference between while and do..while loop?
+A. while loop is first checking the conditions then run, do-while loop is first run then check the conditions.
+
 What is Enum?
+A. it is a special class, that uses a predefined variables, like month of the years, days of the weekk.
+
 What is Iterator?
+A. it is an object that enable a programmer to traverse a container.
+
 Which one will take more memory, an int or Integer?
+A. Integer
+
 Why is String Immutable in Java?
+A. because string objects are cached in string pool.
+
 What is constructor chaining in Java?
+A. it is the process of calling a constructor from an other constructor.
+
 The difference between Serial and Parallel Garbage Collector?
+A.
 What is JIT stands for?
+A. just in time
+
 Explain Java Heap space and Garbage collection?
+A. java moves garbage collection to heap memory to free the memory for the new objects.
+
 Can you guarantee the garbage collection process?
+A. no
+
 What is the difference between stack and heap in Java?
+A. heap is dynamic, and stack is static.
+
 What is reflection in java and why is it useful?
+
 what is multithreading in java?
+A. is when we have multi threads in one main method.
+
 What is the use of synchronization in Java?
+A.
 What is Framework?
+A.
 What are the testing Framework available in java?
+A. Junit , testNG
+
 Difference between jUnit and testNG?
+A. Junit is an open-source framework, testNg is a java based frameword.
+
 What are the dependencies for this project?
+A. Junit , maven
+
 what is dependency injection in java?
+A. when using ans external library.
+
 What is static binding and dynamic binding?
+A. the binding uses type information for binding while dynamic binding uses objects to resolve to bind.
 
 
 
