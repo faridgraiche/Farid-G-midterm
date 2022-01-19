@@ -1,7 +1,11 @@
 package string.problems;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
+
+import static java.util.Comparator.*;
 
 public class DetermineLargestWord {
     public static void main(String[] args) {
@@ -13,6 +17,9 @@ public class DetermineLargestWord {
         Map<Integer, String> wordNLength = findTheLargestWord(s);
         //implement
 
+        String longestWord = Arrays.stream(s.split(" ")).max(Comparator.comparingInt(String::length))
+                .orElse(null).toString();
+        System.out.println(longestWord+ ", length-" +longestWord.length());
     }
 
     public static Map<Integer, String> findTheLargestWord(String wordGiven){
