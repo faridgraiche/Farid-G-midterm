@@ -29,6 +29,16 @@ public class LowestNumber {
 		for(String st:lowestValue){
 			System.out.println(st);
 		}
+
+
+
+		int lowest = array[0];
+		for (int i = 0; i<array.length;i++){
+			if (array[i]<lowest){
+				lowest = array[i];
+			}
+		}
+		System.out.println(lowest);
 	}
 
 }
