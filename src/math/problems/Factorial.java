@@ -20,6 +20,7 @@ public class Factorial {
         System.out.println("welcome to factorial");
         System.out.println("you wanna try?");
 
+
         char answer = 0;
         int number,result;
 

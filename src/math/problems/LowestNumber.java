@@ -22,23 +22,23 @@ public class LowestNumber {
 			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_lowestNumber", "column_lowestNumber");
 			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "column_lowestNumber");
 
+			int lowest = Integer.parseInt(lowestValue.get(0));
+			for (int i = 0; i<lowestValue.size();i++){
+				if (Integer.parseInt(lowestValue.get(i))< lowest){
+					lowest = Integer.parseInt(lowestValue.get(i));
+				}
+			}
+			System.out.println(lowest);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		System.out.println("Data is reading from the Table (tbl_primenumber) and displaying to the console");
-		for(String st:lowestValue){
-			System.out.println(st);
-		}
+//		for(String st:lowestValue){
+//			System.out.println(st);
+//		}
 
 
 
-		int lowest = array[0];
-		for (int i = 0; i<array.length;i++){
-			if (array[i]<lowest){
-				lowest = array[i];
-			}
-		}
-		System.out.println(lowest);
 	}
 
 }

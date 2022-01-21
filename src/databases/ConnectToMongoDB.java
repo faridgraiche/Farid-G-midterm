@@ -26,7 +26,7 @@ public class ConnectToMongoDB {
     public String insertIntoToMongoDB(User user){
         String profile = user.getStName();
         MongoDatabase mongoDatabase = connectToMongoDB();
-        MongoCollection<Document> collection = mongoDatabase.getCollection("profile");
+        MongoCollection<Document> collection = mongoDatabase.getCollection("fariddatabase");
         Document document = new Document().append("stName",user.getStName()).append("stID", user.getStID()).
                 append("stDOB",user.getStDOB());
         collection.insertOne(document);
@@ -72,5 +72,7 @@ public class ConnectToMongoDB {
         //for(User person:user){
             //System.out.println(person.getStName()+ " "+ person.getStID());
         //}
+
+
     }
 }

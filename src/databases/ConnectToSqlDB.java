@@ -138,8 +138,8 @@ public class ConnectToSqlDB {
         try {
             connectToSqlDatabase();
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-                ps.setString(1,"Ankita Sing");
-                ps.setInt(2,3590);
+                ps.setString(1,"farid gra");
+                ps.setInt(2,354533);
                 ps.executeUpdate();
 
 
@@ -157,7 +157,7 @@ public class ConnectToSqlDB {
         User user = null;
         try{
             Connection conn = connectToSqlDatabase();
-            String query = "SELECT * FROM Students";
+            String query = "SELECT * FROM user";
             // create the java statement
             Statement st = conn.createStatement();
             // execute the query, and get a java resultset
@@ -181,17 +181,63 @@ public class ConnectToSqlDB {
         return list;
     }
 
+    public void insertNumbersToSqlTable(String tableName, String columnName1, String columnName2)
+    {
+        try {
+            connectToSqlDatabase();
+            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
+            ps.setInt(1,2);
+            ps.setInt(2,1000000);
+            ps.executeUpdate();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+    public void insertLowestNumberToSqlTable(String tableName, String columnName1, int lowestNumber)
+    {
+        try {
+            connectToSqlDatabase();
+            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + " ) VALUES(?,?)");
+            ps.setInt(1,lowestNumber);
+            ps.executeUpdate();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args) throws Exception {
 //        List<User> list = readUserProfileFromSqlTable();
 //        for(User user:list){
 //            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
 //        }
-//        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+        ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+//        connectToSqlDB.readDataBase("user","name");
+        System.out.println(connectToSqlDB.readDataBase("user","name"));
+//        connectToSqlDB.insertNumbersToSqlTable("PrimeNumber","MinNum","MaxNum");
 //        List<String> students = connectToSqlDB.readDataBase("student", "name");
 //        for (String student: students){
 //            System.out.println(student);
 //        }
 
 
-    }
-}
+
+
+
+            }
+        }
+
+
+
+
+
