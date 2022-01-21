@@ -222,7 +222,7 @@ public class ConnectToSqlDB {
 //            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
 //        }
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-//        connectToSqlDB.readDataBase("user","name");
+        connectToSqlDB.readDataBase("user","name");
         System.out.println(connectToSqlDB.readDataBase("user","name"));
 //        connectToSqlDB.insertNumbersToSqlTable("PrimeNumber","MinNum","MaxNum");
 //        List<String> students = connectToSqlDB.readDataBase("student", "name");
